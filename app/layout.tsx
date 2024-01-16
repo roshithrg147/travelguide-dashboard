@@ -1,5 +1,17 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  // title: 'Travel Guide',
+  title: {
+    template: '%s | Trav-Gui Dashboard',
+    default: 'Travel Guide',
+  },
+  description: 'The official Travel Guide, built with App Router, makes travel anywhere at anytime.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
+
 
 
 export default function RootLayout({
